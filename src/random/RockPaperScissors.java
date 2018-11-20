@@ -76,7 +76,7 @@ public class RockPaperScissors extends JPanel implements ActionListener{
     public void actionPerformed(ActionEvent e) {
         
         //1. Run the program and play many rounds of Rock Paper Scissors. Does the computer always choose the same thing?
-    	
+    	//Yes. The computer always just does rock. This is because the code above is telling the computer to only generate 0 which equals rock.
 
         //2. Change the value of opponentSelection to be a random number between 0 and 2;
 	//   Don't forget to create a Random object.
@@ -86,7 +86,7 @@ public class RockPaperScissors extends JPanel implements ActionListener{
         int opponentSelection = 0;
         opponentSelection= hi.nextInt(3);
         //3. Run the program again. Is the result different?
- 
+ //Yes. It is different. In fact, now it does a random answer of either rock, paper, or scissors! Wow! 
         int selection = 0;
        
         if(e.getSource() == paperButton){
